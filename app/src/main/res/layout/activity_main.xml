@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="REGISTRO DE TRABAJADORES"
+        android:textColor="#D40031"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Nombres y apellidos"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/eNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Ingrese sus nombrs y apellidos"
+        android:inputType="text"
+        android:maxLength="200"
+
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Estado civil"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbCasado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casado"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rbDivorciado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divorciado" />
+
+        <RadioButton
+            android:id="@+id/rbViudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viudo" />
+
+        <RadioButton
+            android:id="@+id/rbSoltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soltero" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Hobbies"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Futbol"
+        android:id="@+id/cbFutbol"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basquet"
+        android:id="@+id/cbBasquet"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volley"
+        android:id="@+id/cbVolley"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hockey"
+        android:id="@+id/chHockey"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/black"
+        android:minHeight="48dp"
+        android:text="Registrar" />
+
+
+
+</LinearLayout>
